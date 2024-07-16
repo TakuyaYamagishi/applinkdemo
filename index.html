@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // ユーザーエージェントを使用してiOSデバイスを確認
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/jp/app/%E9%87%8E%E8%8F%9C%E3%82%92%E3%81%A8%E3%82%8D%E3%81%86/id1604548393"; // App Storeへのリンク
+        } else {
+            // 他の処理（例: Androidの場合、Google Playへのリダイレクトなど）
+            window.location.href = "https://play.google.com/store/apps/details?id=com.kagome.yasai_app&hl=ja";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
